@@ -9,6 +9,6 @@ jobs:
     - uses: jakejarvis/backblaze-b2-action@master
       env:
         SOURCE_DIR: './stable'
-        B2_BUCKET: 'kubernetes-charts'
-        B2_APPKEY_ID: '002558455cb829a0000000001'
-        B2_APPKEY: 'K002bsG88zMHTh0oi6JdaW6gC3cFCZc'
+        B2_BUCKET: ${{ secrets.B2_BUCKET }}
+        B2_APPKEY_ID: ${{ secrets.B2_APPKEY_ID }}
+        B2_APPKEY: ${{ secrets.B2_APPKEY }}
