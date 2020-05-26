@@ -12,7 +12,7 @@ jobs:
         B2_BUCKET: 'kubernetes-charts'
         B2_APPKEY_ID: '002558455cb829a0000000001'
         B2_APPKEY: 'K002bsG88zMHTh0oi6JdaW6gC3cFCZc'
-   deploy:
+   deploy-incubator:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
